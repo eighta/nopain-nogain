@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "21f74486-5d09-42a6-8feb-46c40ea67a15",
+		"name": "NoPainNoGain",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "authentication",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"admin\", \"password\": \"pass\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/auth",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ciudades LIST (test)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjMwNTYwNjM3LCJleHAiOjE2MzA1NjIwNzd9.xH3EDS6J98EWz8pBgjtbdxzWeMYY6RD4_Pnr_K0Qa9w",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/ciudades/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"ciudades",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ciudades CREATE",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjMwNTYwNjM3LCJleHAiOjE2MzA1NjIwNzd9.xH3EDS6J98EWz8pBgjtbdxzWeMYY6RD4_Pnr_K0Qa9w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"code\":\"BOG\", \"name\": \"Bogotá\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/ciudades/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"ciudades",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sedes LIST (test) Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjMwNTYwNjM3LCJleHAiOjE2MzA1NjIwNzd9.xH3EDS6J98EWz8pBgjtbdxzWeMYY6RD4_Pnr_K0Qa9w",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/sedes/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sedes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sedes CREATE",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjMwNTYwNjM3LCJleHAiOjE2MzA1NjIwNzd9.xH3EDS6J98EWz8pBgjtbdxzWeMYY6RD4_Pnr_K0Qa9w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"code\":\"CHICO\", \"name\": \"Chicó Reservado\", \"ciudad_code\":\"BOG\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/sedes/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sedes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "usuarios LIST (test)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjMwNTYwNjM3LCJleHAiOjE2MzA1NjIwNzd9.xH3EDS6J98EWz8pBgjtbdxzWeMYY6RD4_Pnr_K0Qa9w",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/usuarios/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usuarios",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "usuarios CREATE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"identification\":\"44455566\",\"name\":\"John Doe\",\"ciudad_code\":\"CTG\",\"sede_code\":\"NORTE\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/usuarios/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usuarios",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "usuarios_por_sede (report)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjMwNTU5OTY4LCJleHAiOjE2MzA1NjE0MDh9.8Wd0kOUtGJVRl11OR1a8l9uE36llh2wksgBaROBD5zw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/ciudades/CTG/sedes/NORTE/usuarios",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"ciudades",
+						"CTG",
+						"sedes",
+						"NORTE",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

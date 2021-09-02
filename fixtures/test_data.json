@@ -1,0 +1,28 @@
+[
+    {
+        "model": "Ciudades",
+        "data": {
+            "code": "CTG",
+            "name": "Cartagena"
+        }
+    }
+
+    ,{
+        "model": "Sedes",
+        "data": {
+            "code": "NORTE",
+            "name": "Bocagrande",
+            "ciudad_code":"CTG"
+        }
+    }
+
+    ,{
+        "model": "Usuarios",
+        "data": {
+            "identification": "ABC123",
+            "name": "Milton Ochoa Larios",
+            "ciudad_code":"CTG",
+            "sede_code":"NORTE"
+        }
+    }
+]
